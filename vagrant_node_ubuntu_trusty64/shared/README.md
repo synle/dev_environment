@@ -1,0 +1,1 @@
+Empty folder used for shared folder setup
