@@ -6,14 +6,18 @@ hbase-env.sh - java home
 hbase-site.env
 ```
 	<property>
-        <name>hbase.rootdir</name>
-        <value>/opt/hbase-0.98.9-hadoop2/data</value>
+	        <name>hbase.rootdir</name>
+	        <value>/opt/hbase/data</value>
         </property>
         <property>
-        <name>hbase.zookeeper.property.dataDir</name>
-        <value>/opt/hbase-0.98.9-hadoop2/zookepper</value>
+	        <name>hbase.zookeeper.property.dataDir</name>
+	        <value>/opt/hbase/zookepper</value>
         </property>
 ```
 
 
-
+to start
+```
+/opt/hbase/bin
+./start-hbase.sh 
+```
