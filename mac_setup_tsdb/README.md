@@ -1,3 +1,7 @@
+Download HBase Here:
+http://www.apache.org/dyn/closer.cgi/hbase/
+
+
 hbase-env.sh - java home
 ```
 	export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
@@ -18,6 +22,6 @@ hbase-site.env
 
 to start
 ```
-/opt/hbase/bin
+cd /opt/hbase/bin
 ./start-hbase.sh 
 ```
