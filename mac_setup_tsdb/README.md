@@ -25,3 +25,9 @@ to start
 cd /opt/hbase/bin
 ./start-hbase.sh 
 ```
+
+
+access your hbase at
+```
+http://localhost:60010
+```
