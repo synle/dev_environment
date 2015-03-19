@@ -20,3 +20,14 @@ sudo apt-get remove -y gimp
 sudo apt-get remove -y libreoffice-math
 sudo apt-get remove -y libreoffice-draw
 ```
+
+
+Tips for speeding up linux mint:
+src: https://sites.google.com/site/easylinuxtipsproject/3
+```
+# Reduce the swap tendency
+vm.swappiness = 10
+
+# Improve cache management
+vm.vfs_cache_pressure=50
+```
