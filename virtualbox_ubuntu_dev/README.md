@@ -24,6 +24,7 @@ sudo apt-get remove -y libreoffice-draw
 
 Tips for speeding up linux mint:
 src: https://sites.google.com/site/easylinuxtipsproject/3
+sudo vim /etc/sysctl.conf
 ```
 # Reduce the swap tendency
 vm.swappiness = 10
