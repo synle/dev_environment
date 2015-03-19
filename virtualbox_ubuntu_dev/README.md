@@ -3,3 +3,20 @@ linuxmint_environment_setup
 
 
 Setup the environment for development.
+
+
+Remove craps from Linux Mint XCFE
+```
+sudo apt-get remove -y transmission-*
+sudo apt-get remove -y gthumb*
+sudo apt-get remove -y simple-scan
+sudo apt-get remove -y thunderbird*
+sudo apt-get remove -y midori
+sudo apt-get remove -y hexchat*
+sudo apt-get remove -y pidgin*
+sudo apt-get remove -y banshee
+sudo apt-get remove -y xfburn
+sudo apt-get remove -y gimp
+sudo apt-get remove -y libreoffice-math
+sudo apt-get remove -y libreoffice-draw
+```
