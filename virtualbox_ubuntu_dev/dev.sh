@@ -10,7 +10,7 @@ sudo echo "[Desktop Entry]" > /usr/share/applications/eclipse.desktop;
 sudo echo "Name=Eclipse EE" >> /usr/share/applications/eclipse.desktop;
 sudo echo "Comment=Eclipse EE" >> /usr/share/applications/eclipse.desktop;
 sudo echo "GenericName=Text Editor" >> /usr/share/applications/eclipse.desktop;
-sudo echo "Exec=/opt/eclipse/eclipse" >> /usr/share/applications/eclipse.desktop;
+sudo echo "Exec=/opt/eclipse/eclipse -nosplash" >> /usr/share/applications/eclipse.desktop;
 sudo echo "Icon=/opt/eclipse/icon.xpm" >> /usr/share/applications/eclipse.desktop;
 sudo echo "Type=Application" >> /usr/share/applications/eclipse.desktop;
 sudo echo "StartupNotify=true" >> /usr/share/applications/eclipse.desktop;
