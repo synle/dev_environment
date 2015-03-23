@@ -92,5 +92,5 @@ vm.vfs_cache_pressure=50
 Add yourself to vbox_sf to get access to shared folder
 http://askubuntu.com/questions/481559/how-to-automatically-mount-a-folder-and-change-ownership-from-root-in-virtualbox
 ```
-  sudo usermod -G vboxsf -a myusername
+  sudo usermod -G vboxsf -a syle
 ```
