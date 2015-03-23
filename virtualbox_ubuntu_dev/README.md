@@ -26,6 +26,9 @@ sudo apt-get remove -y firefox*;
 sudo apt-get remove -y thunderbird*;
 sudo apt-get remove -y pulseaudio*;
 sudo apt-get remove -y banshee;
+
+sudo apt-get autoremove -y;
+sudo apt-get autoclean -y;
 ```
 
 
@@ -34,7 +37,8 @@ install
 #third party repo
 echo "add third party repo packages";
 curl -sL https://deb.nodesource.com/setup | sudo bash -;
-sudo apt-get update;
+sudo apt-get update -y;
+sudo apt-get upgrade -y;
 sudo apt-get install -f -y;
 
 #install here
@@ -61,8 +65,15 @@ sudo apt-get install -y xclip;
 sudo apt-get install -y make;
 sudo apt-get install -y openssh-server;
 sudo apt-get install -y midori;
+sudo apt-get install -f -y;
+
+
+#nodejs
 sudo apt-get -y install nodejs;
 sudo apt-get install -f -y;
+
+echo "install nodejs depdencies";
+sudo npm install -g yo karma-cli bower mocha grunt-cli forever gulp nodemon;
 ```
 
 
