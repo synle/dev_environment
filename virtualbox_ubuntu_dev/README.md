@@ -7,18 +7,62 @@ Setup the environment for development.
 
 Remove craps from Linux Mint XCFE
 ```
-sudo apt-get remove -y transmission-*
-sudo apt-get remove -y gthumb*
-sudo apt-get remove -y simple-scan
-sudo apt-get remove -y thunderbird*
-sudo apt-get remove -y midori
-sudo apt-get remove -y hexchat*
-sudo apt-get remove -y pidgin*
-sudo apt-get remove -y banshee
-sudo apt-get remove -y xfburn
-sudo apt-get remove -y gimp
-sudo apt-get remove -y libreoffice-math
-sudo apt-get remove -y libreoffice-draw
+sudo apt-get remove -y transmission-*;
+sudo apt-get remove -y gthumb*;
+sudo apt-get remove -y simple-scan;
+sudo apt-get remove -y thunderbird*;
+sudo apt-get remove -y hexchat*;
+sudo apt-get remove -y pidgin*;
+sudo apt-get remove -y banshee;
+sudo apt-get remove -y xfburn;
+sudo apt-get remove -y gimp;
+sudo apt-get remove -y libreoffice-math;
+sudo apt-get remove -y libreoffice-draw;
+sudo apt-get remove -y libreoffice-calc;
+sudo apt-get remove -y xfburn*;
+sudo apt-get remove -y pulseaudio;
+sudo apt-get remove -y hexchat*;
+sudo apt-get remove -y firefox*;
+sudo apt-get remove -y thunderbird*;
+sudo apt-get remove -y pulseaudio*;
+sudo apt-get remove -y banshee;
+```
+
+
+install
+```
+#third party repo
+echo "add third party repo packages";
+curl -sL https://deb.nodesource.com/setup | sudo bash -;
+sudo apt-get update;
+sudo apt-get install -f -y;
+
+#install here
+sudo apt-get install -y curl; 
+sudo apt-get install -y build-essential;
+sudo apt-get install -y git-core;
+sudo apt-get install -y openjdk-7-jdk;
+sudo apt-get install -y python-dev;
+sudo apt-get install -y virtualbox-guest-x11;
+sudo apt-get install -y python-software-properties;
+sudo apt-get install -y software-properties-common;
+sudo apt-get install -y g++;
+sudo apt-get install -y python;
+sudo apt-get install -y supervisor;
+sudo apt-get install -y automake;
+sudo apt-get install -y gnuplot;
+sudo apt-get install -y unzip;
+sudo apt-get install -y vim;
+sudo apt-get install -y git;
+sudo apt-get install -y gpicview;
+sudo apt-get install -y maven;
+sudo apt-get install -y terminator;
+sudo apt-get install -y xclip;
+sudo apt-get install -y make;
+sudo apt-get install -y openssh-server;
+sudo apt-get install -y midori;
+sudo apt-get -y install nodejs;
+sudo apt-get install -f -y;
 ```
 
 
