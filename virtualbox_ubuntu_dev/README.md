@@ -81,11 +81,11 @@ Tips for speeding up linux mint:
 src: https://sites.google.com/site/easylinuxtipsproject/3
 sudo vim /etc/sysctl.conf
 ```
-# Reduce the swap tendency
-vm.swappiness = 10
+sudo echo "# Reduce the swap tendency" >> /etc/sysctl.conf
+sudo echo "vm.swappiness = 10" >> /etc/sysctl.conf
 
-# Improve cache management
-vm.vfs_cache_pressure=50
+sudo echo "# Improve cache management" >> /etc/sysctl.conf
+sudo echo "vm.vfs_cache_pressure=50" >> /etc/sysctl.conf
 ```
 
 
