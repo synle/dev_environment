@@ -96,6 +96,14 @@ sudo echo "vm.vfs_cache_pressure=50" >> /etc/sysctl.conf
 ```
 
 
+Setup Selenium
+```
+  chmod 761 /usr/bin/selenium_standalone
+  
+  #!/bin/sh
+  java -jar /opt/selenium-server-standalone-2.45.0.jar
+```
+
 Add yourself to vbox_sf to get access to shared folder
 http://askubuntu.com/questions/481559/how-to-automatically-mount-a-folder-and-change-ownership-from-root-in-virtualbox
 ```
