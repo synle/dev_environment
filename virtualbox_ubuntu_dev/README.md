@@ -76,6 +76,13 @@ echo "install nodejs depdencies";
 sudo npm install -g yo karma-cli bower mocha grunt-cli forever gulp nodemon;
 ```
 
+Setup Git
+```
+git config --global color.ui true
+git config --global user.name "Sy Le"
+git config --global user.email "lenguyensy@gmail.com"
+```
+
 
 Tips for speeding up linux mint:
 src: https://sites.google.com/site/easylinuxtipsproject/3
