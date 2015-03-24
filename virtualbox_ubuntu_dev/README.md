@@ -58,22 +58,32 @@ sudo apt-get install -y gnuplot;
 sudo apt-get install -y unzip;
 sudo apt-get install -y vim;
 sudo apt-get install -y git;
-sudo apt-get install -y gpicview;
 sudo apt-get install -y maven;
-sudo apt-get install -y terminator;
 sudo apt-get install -y xclip;
 sudo apt-get install -y make;
 sudo apt-get install -y openssh-server;
-sudo apt-get install -y midori;
 sudo apt-get install -f -y;
-
 
 #nodejs
-sudo apt-get -y install nodejs;
+sudo apt-get -y install nodejs npm;
 sudo apt-get install -f -y;
+sudo cp /usr/bin/nodejs /usr/bin/node
 
 echo "install nodejs depdencies";
 sudo npm install -g yo karma-cli bower mocha grunt-cli forever gulp nodemon;
+
+
+#other stuffs
+sudo apt-get install -y redis-server;
+sudo apt-get install -y memcached;
+sudo apt-get install -y mysql-server mysql-client;
+```
+
+
+install for gui (xcfe or lxde):
+```
+sudo apt-get install -y midori;
+sudo apt-get install -y terminator;
 ```
 
 Setup Git
@@ -90,7 +100,7 @@ src: https://sites.google.com/site/easylinuxtipsproject/3
 sudo vim /etc/sysctl.conf
 ```
 sudo echo "# Reduce the swap tendency" >> /etc/sysctl.conf
-sudo echo "vm.swappiness = 10" >> /etc/sysctl.conf
+sudo echo "vm.swappiness = 1" >> /etc/sysctl.conf
 
 sudo echo "# Improve cache management" >> /etc/sysctl.conf
 sudo echo "vm.vfs_cache_pressure=50" >> /etc/sysctl.conf
