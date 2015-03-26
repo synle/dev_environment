@@ -133,6 +133,25 @@ sudo echo "vm.vfs_cache_pressure=50" >> /etc/sysctl.conf
 ```
 
 
+Setup TSDB
+```
+#first time build opentsdb
+sh build.sh
+
+#first time create table
+env COMPRESSION=NONE HBASE_HOME=/opt/hbase/ /opt/opentsdb/src/create_table.sh
+
+#start opentsdb
+  #verbose mode
+  /opt/opentsdb/build/tsdb tsd --config=/opt/opentsdb/src/opentsdb.conf
+  
+  #silent mode
+  nohup /opt/opentsdb/build/tsdb tsd --config=/opt/opentsdb/src/opentsdb.conf &
+
+#tcollector (collect stats and send to tsdb)
+/opt/tcollector/startstop start
+```
+
 Setup Selenium
 ```
   chmod 761 /usr/bin/selenium_standalone
