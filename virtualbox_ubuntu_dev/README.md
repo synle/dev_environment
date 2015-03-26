@@ -89,24 +89,24 @@ sudo apt-get install -y terminator;
 
 Setup HBase
 ```
-  Hbase-site:
+Hbase-site:
   
-<configuration>
-        <property>
-            <name>hbase.rootdir</name>
-            <value>file:///opt/hbase/data</value>
-        </property>
-        <property>
-            <name>hbase.zookeeper.property.dataDir</name>
-            <value>file:///opt/hbase/zookepper</value>
-        </property>
-</configuration>
+  <configuration>
+          <property>
+              <name>hbase.rootdir</name>
+              <value>file:///opt/hbase/data</value>
+          </property>
+          <property>
+              <name>hbase.zookeeper.property.dataDir</name>
+              <value>file:///opt/hbase/zookepper</value>
+          </property>
+  </configuration>
+  
+  sudo mkdir /opt/hbase/zookepper
+  sudo mkdir /opt/hbase/data
 
-sudo mkdir /opt/hbase/zookepper
-sudo mkdir /opt/hbase/data
 
-
-  Hbase-env.sh
+Hbase-env.sh
   export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
   
   Test your hbase instance at localhost:60010
@@ -141,12 +141,18 @@ sh build.sh
 #first time create table
 env COMPRESSION=NONE HBASE_HOME=/opt/hbase/ /opt/opentsdb/src/create_table.sh
 
-#start opentsdb
+#start tsdb from command line arguments, this is the least requirement you need to start
+/opt/opentsdb/build/tsdb tsd --port=4242 --staticroot=/opt/opentsdb/bui/staticroot --cachedir=/tmp/opentsdb
+
+#start opentsdb from config file
   #verbose mode
   /opt/opentsdb/build/tsdb tsd --config=/opt/opentsdb/src/opentsdb.conf
   
   #silent mode
   nohup /opt/opentsdb/build/tsdb tsd --config=/opt/opentsdb/src/opentsdb.conf &
+  
+  #test tsdb at
+  localhost:4242
 
 #tcollector (collect stats and send to tsdb)
 /opt/tcollector/startstop start
