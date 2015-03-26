@@ -87,6 +87,16 @@ sudo apt-get install -y terminator;
 ```
 
 
+Setup Git
+```
+git config --global color.ui true
+git config --global push.default matching
+git config --global user.name "Sy Le"
+git config --global user.email "lenguyensy@gmail.com"
+```
+
+
+
 Setup HBase
 ```
 Hbase-site:
@@ -110,26 +120,6 @@ Hbase-env.sh
   export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
   
   Test your hbase instance at localhost:60010
-```
-
-Setup Git
-```
-git config --global color.ui true
-git config --global push.default matching
-git config --global user.name "Sy Le"
-git config --global user.email "lenguyensy@gmail.com"
-```
-
-
-Tips for speeding up linux mint:
-src: https://sites.google.com/site/easylinuxtipsproject/3
-sudo vim /etc/sysctl.conf
-```
-sudo echo "# Reduce the swap tendency" >> /etc/sysctl.conf
-sudo echo "vm.swappiness = 1" >> /etc/sysctl.conf
-
-sudo echo "# Improve cache management" >> /etc/sysctl.conf
-sudo echo "vm.vfs_cache_pressure=50" >> /etc/sysctl.conf
 ```
 
 
@@ -177,4 +167,18 @@ User groups
   
   #jenkins
   sudo usermod -G jenkins -a syle
+```
+
+
+
+
+Tips for speeding up linux mint:
+src: https://sites.google.com/site/easylinuxtipsproject/3
+sudo vim /etc/sysctl.conf
+```
+sudo echo "# Reduce the swap tendency" >> /etc/sysctl.conf
+sudo echo "vm.swappiness = 1" >> /etc/sysctl.conf
+
+sudo echo "# Improve cache management" >> /etc/sysctl.conf
+sudo echo "vm.vfs_cache_pressure=50" >> /etc/sysctl.conf
 ```
