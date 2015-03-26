@@ -162,7 +162,7 @@ Setup Selenium
 ```
   chmod 761 /usr/bin/selenium_standalone
   
-  #!/bin/sh
+  #!/usr/bin/env bash
   java -jar /opt/selenium-server-standalone-2.45.0.jar
 ```
 
