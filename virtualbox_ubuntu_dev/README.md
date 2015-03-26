@@ -86,6 +86,32 @@ sudo apt-get install -y midori;
 sudo apt-get install -y terminator;
 ```
 
+
+Setup HBase
+```
+  Hbase-site:
+  
+<configuration>
+        <property>
+            <name>hbase.rootdir</name>
+            <value>file:///opt/hbase/data</value>
+        </property>
+        <property>
+            <name>hbase.zookeeper.property.dataDir</name>
+            <value>file:///opt/hbase/zookepper</value>
+        </property>
+</configuration>
+
+sudo mkdir /opt/hbase/zookepper
+sudo mkdir /opt/hbase/data
+
+
+  Hbase-env.sh
+  export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+  
+  Test your hbase instance at localhost:60010
+```
+
 Setup Git
 ```
 git config --global color.ui true
