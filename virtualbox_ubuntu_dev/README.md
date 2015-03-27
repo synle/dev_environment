@@ -176,6 +176,15 @@ User groups
 
 
 
+Useful symbolic links
+```
+#jenkins home
+ln -s /var/lib/jenkins ~/
+
+#vbox shared folder
+ln -s /media/sf* .
+```
+
 
 Tips for speeding up linux mint:
 src: https://sites.google.com/site/easylinuxtipsproject/3
