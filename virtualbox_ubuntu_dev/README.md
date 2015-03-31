@@ -132,7 +132,7 @@ sh build.sh
 env COMPRESSION=NONE HBASE_HOME=/opt/hbase/ /opt/opentsdb/src/create_table.sh
 
 #start tsdb from command line arguments, this is the least requirement you need to start
-/opt/opentsdb/build/tsdb tsd --port=4242 --staticroot=/opt/opentsdb/build/staticroot --cachedir=/tmp/opentsdb
+/opt/opentsdb/build/tsdb tsd --port=4242 --staticroot=/opt/opentsdb/build/staticroot --cachedir=/tmp/opentsdb  --auto-metric 
 
 #start opentsdb from config file
   #verbose mode
