@@ -1,6 +1,11 @@
 Download HBase Here:
 http://www.apache.org/dyn/closer.cgi/hbase/
 
+```
+	#in case install hbase in /opt
+	mkdir -p /opt/hbase/zookeeper
+	mkdir -p /opt/hbase/data
+```
 
 hbase-env.sh - java home
 ```
@@ -15,7 +20,7 @@ hbase-site.env
         </property>
         <property>
 	        <name>hbase.zookeeper.property.dataDir</name>
-	        <value>/opt/hbase/zookepper</value>
+	        <value>/opt/hbase/zookeeper</value>
         </property>
 ```
 
